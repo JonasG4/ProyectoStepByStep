@@ -1,8 +1,3 @@
-body {
-    background: #ebf5fc
-}
-
-
 /*-------------PORTADA------------*/
 
 .sec {
@@ -12,18 +7,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #1094d2;
+    background: rgba(28, 68, 124, 1);
     /*#1c447c;*/
     transition: 0.5s;
 }
 
 .content {
     position: relative;
-    width: 990px;
+    width: 100%;
     height: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    background: rgba(255, 255, 255, 0.09);
 }
 
 .content .textBox {
@@ -41,20 +37,28 @@ body {
     text-transform: uppercase;
 }
 
+.content .textBox .h2-icon::after {
+    content: '\f058';
+    font-family: fontawesome;
+    padding-left: 20px;
+}
+
 .content .textBox h2 span {
     font-size: 2em;
-    color: #1094d2;
+    color: #21abe2;
 }
 
 .content .textBox p {
     color: #fff;
+    padding-right: 20px;
+    text-align: left;
 }
 
 .content .textBox a {
     display: inline-block;
     margin-top: 20px;
     padding: 8px 20px;
-    background: #0a94d4;
+    background: #21abe2;
     color: #fff;
     border-radius: 40px;
     font-weight: 500;
@@ -64,48 +68,28 @@ body {
 }
 
 .img-portada {
-    position: absolute;
-}
-
-.img-portada:before {
-    content: '';
-    position: absolute;
-    width: 60%;
-    height: 100%;
-    background: rgba(28, 68, 124, 0.8);
-    text-align: left;
-}
-
-
-/* .circule {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #2f58aa;
-    clip-path: circle(600px at right 800px);
-} */
-
-.custom-shape-divider-bottom-1604948723 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-bottom-1604948723 svg {
     position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-    transform: rotateY(180deg);
+    padding: 10px;
 }
 
-.custom-shape-divider-bottom-1604948723 .shape-fill {
-    fill: #dae5ea;
+@media (max-width: 1640px) {
+    .img-portada {
+        position: absolute;
+    }
+    .img-portada::before {
+        content: '';
+        position: absolute;
+        background: rgba(28, 68, 124, 0.5);
+        width: 60%;
+        height: 100%;
+    }
+    .content {
+        padding: 0 100px;
+        justify-content: center;
+    }
+    .textBox {
+        right: 150px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -113,22 +97,18 @@ body {
         justify-content: flex-start;
         flex-direction: column;
         padding-top: 100px;
+        min-height: 600px;
     }
     .content {
         justify-content: center;
         width: 100%;
+        padding: 40px 0 40px 0;
     }
     .content .textBox h2 {
         font-size: 3em;
     }
-    .content .textBox h2 span {
-        color: #fff;
-    }
     .img-portada {
-        position: relative;
-        height: 0%;
-        width: 0%;
-        overflow: hidden;
+        display: none;
     }
     .circule {
         clip-path: none;

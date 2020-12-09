@@ -37,7 +37,7 @@ footer .container h2:before {
     left: 0;
     width: 50px;
     height: 2px;
-    background: #f00;
+    background: #0a94d4;
 }
 
 footer p {
@@ -68,7 +68,7 @@ footer p {
 }
 
 .sci li a:hover {
-    background: #f00;
+    background: #0a94d4;
 }
 
 .sci li a .fa {

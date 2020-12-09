@@ -1,19 +1,21 @@
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 100%;
-    padding: 10px 100px;
+    padding: 5px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 10;
-    background: #dae5ea;
+    background: #1c447c;
+    border-bottom: 5px solid #21abe2;
 }
 
 header .logo {
     position: relative;
-    max-width: 80px;
+    max-width: 100px;
+    padding: 10px;
 }
 
 header .nav {
@@ -27,11 +29,11 @@ header .nav li {
 
 header .nav li a {
     display: inline-block;
-    color: #1c447c;
+    color: #dae5ea;
     font-weight: 400;
     margin-left: 40px;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 header .fas {
@@ -43,7 +45,7 @@ header .fas {
 
 @media (max-width: 991px) {
     header {
-        padding: 20px 40px;
+        padding: 5px 40px;
     }
     header .nav {
         position: fixed;
@@ -69,9 +71,9 @@ header .fas {
         position: relative;
         width: 40px;
         height: 40px;
-        font-size: 40px;
+        font-size: 35px;
         text-align: center;
-        color: #1c447c;
+        color: #FFF;
         cursor: pointer;
         z-index: 1000;
     }

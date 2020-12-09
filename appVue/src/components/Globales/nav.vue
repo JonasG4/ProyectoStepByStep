@@ -1,6 +1,6 @@
 <template>
   <header>
-    <a href=""><img src="@/assets/logo.png" class="logo" /></a>
+    <a href=""><img src="@/assets/logo3.png" class="logo" /></a>
     <i class="fas fa-bars" @click="menuToggle"></i>
     <ul class="nav">
       <li><a href="">Inicio</a></li>
